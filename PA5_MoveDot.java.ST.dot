@@ -1,0 +1,31 @@
+digraph SymTable {
+	graph [rankdir="LR"];
+	node [shape=record];
+	0 [label=" <f0> Scope | <f1> mDict\[Dot\] "];
+	0:<f1> -> 1:<f0>;
+	1 [label=" <f0> ClassSTE | <f1> mName = Dot| <f2> mMain = false| <f3> mSuperClass = null| <f4> mScope "];
+	1:<f4> -> 2:<f0>;
+	2 [label=" <f0> Scope | <f1> mDict\[cur_x\] | <f2> mDict\[cur_y\] | <f3> mDict\[run\] | <f4> mDict\[movedot\] "];
+	2:<f1> -> 3:<f0>;
+	3 [label=" <f0> VarSTE | <f1> mName = cur_x| <f2> mType = BYTE| <f3> mBase = Z| <f4> mOffset = 0"];
+	2:<f2> -> 4:<f0>;
+	4 [label=" <f0> VarSTE | <f1> mName = cur_y| <f2> mType = BYTE| <f3> mBase = Z| <f4> mOffset = 1"];
+	2:<f3> -> 5:<f0>;
+	5 [label=" <f0> MethodSTE | <f1> mName = run| <f2> mSignature = () returns class_null;| <f3> mScope "];
+	5:<f3> -> 6:<f0>;
+	6 [label=" <f0> Scope | <f1> mDict\[this\] | <f2> mDict\[localvar\] "];
+	6:<f1> -> 7:<f0>;
+	7 [label=" <f0> VarSTE | <f1> mName = this| <f2> mType = class_Dot;| <f3> mBase = Y| <f4> mOffset = 1"];
+	6:<f2> -> 8:<f0>;
+	8 [label=" <f0> VarSTE | <f1> mName = localvar| <f2> mType = TONE| <f3> mBase = Y| <f4> mOffset = 3"];
+	2:<f4> -> 9:<f0>;
+	9 [label=" <f0> MethodSTE | <f1> mName = movedot| <f2> mSignature = (BYTE, BYTE) returns class_null;| <f3> mScope "];
+	9:<f3> -> 10:<f0>;
+	10 [label=" <f0> Scope | <f1> mDict\[this\] | <f2> mDict\[x\] | <f3> mDict\[y\] "];
+	10:<f1> -> 11:<f0>;
+	11 [label=" <f0> VarSTE | <f1> mName = this| <f2> mType = class_Dot;| <f3> mBase = Y| <f4> mOffset = 1"];
+	10:<f2> -> 12:<f0>;
+	12 [label=" <f0> VarSTE | <f1> mName = x| <f2> mType = BYTE| <f3> mBase = Y| <f4> mOffset = 3"];
+	10:<f3> -> 13:<f0>;
+	13 [label=" <f0> VarSTE | <f1> mName = y| <f2> mType = BYTE| <f3> mBase = Y| <f4> mOffset = 4"];
+}

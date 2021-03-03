@@ -1,0 +1,225 @@
+digraph ASTGraph {
+0 [ label="Program" ];
+1 [ label="MainClass" ];
+0 -> 1
+2 [ label="BlockStatement" ];
+1 -> 2
+3 [ label="BlockStatement" ];
+2 -> 3
+4 [ label="CallStatement" ];
+3 -> 4
+5 [ label="NewExp" ];
+4 -> 5
+6 [ label="IntLiteral\n1" ];
+4 -> 6
+7 [ label="IntLiteral\n2" ];
+4 -> 7
+8 [ label="IntLiteral\n3" ];
+4 -> 8
+9 [ label="IntLiteral\n4" ];
+4 -> 9
+10 [ label="IntLiteral\n5" ];
+4 -> 10
+11 [ label="IntLiteral\n6" ];
+4 -> 11
+12 [ label="IntLiteral\n7" ];
+4 -> 12
+13 [ label="IntLiteral\n8" ];
+4 -> 13
+14 [ label="TopClassDecl" ];
+0 -> 14
+15 [ label="VarDecl" ];
+14 -> 15
+16 [ label="IntArrayType" ];
+15 -> 16
+17 [ label="MethodDecl" ];
+14 -> 17
+18 [ label="VoidType" ];
+17 -> 18
+19 [ label="Formal" ];
+17 -> 19
+20 [ label="IntType" ];
+19 -> 20
+21 [ label="Formal" ];
+17 -> 21
+22 [ label="IntType" ];
+21 -> 22
+23 [ label="Formal" ];
+17 -> 23
+24 [ label="IntType" ];
+23 -> 24
+25 [ label="Formal" ];
+17 -> 25
+26 [ label="IntType" ];
+25 -> 26
+27 [ label="Formal" ];
+17 -> 27
+28 [ label="IntType" ];
+27 -> 28
+29 [ label="Formal" ];
+17 -> 29
+30 [ label="IntType" ];
+29 -> 30
+31 [ label="Formal" ];
+17 -> 31
+32 [ label="IntType" ];
+31 -> 32
+33 [ label="Formal" ];
+17 -> 33
+34 [ label="IntType" ];
+33 -> 34
+35 [ label="AssignStatement" ];
+17 -> 35
+36 [ label="NewArrayExp" ];
+35 -> 36
+37 [ label="IntType" ];
+36 -> 37
+38 [ label="IntLiteral\n8" ];
+36 -> 38
+39 [ label="ArrayAssignStatement" ];
+17 -> 39
+40 [ label="IdLiteral\np" ];
+39 -> 40
+41 [ label="IntLiteral\n0" ];
+39 -> 41
+42 [ label="IdLiteral\nr1" ];
+39 -> 42
+43 [ label="ArrayAssignStatement" ];
+17 -> 43
+44 [ label="IdLiteral\np" ];
+43 -> 44
+45 [ label="IntLiteral\n1" ];
+43 -> 45
+46 [ label="IdLiteral\nr2" ];
+43 -> 46
+47 [ label="ArrayAssignStatement" ];
+17 -> 47
+48 [ label="IdLiteral\np" ];
+47 -> 48
+49 [ label="IntLiteral\n2" ];
+47 -> 49
+50 [ label="IdLiteral\nr3" ];
+47 -> 50
+51 [ label="ArrayAssignStatement" ];
+17 -> 51
+52 [ label="IdLiteral\np" ];
+51 -> 52
+53 [ label="IntLiteral\n3" ];
+51 -> 53
+54 [ label="IdLiteral\nr4" ];
+51 -> 54
+55 [ label="ArrayAssignStatement" ];
+17 -> 55
+56 [ label="IdLiteral\np" ];
+55 -> 56
+57 [ label="IntLiteral\n4" ];
+55 -> 57
+58 [ label="IdLiteral\nr5" ];
+55 -> 58
+59 [ label="ArrayAssignStatement" ];
+17 -> 59
+60 [ label="IdLiteral\np" ];
+59 -> 60
+61 [ label="IntLiteral\n5" ];
+59 -> 61
+62 [ label="IdLiteral\nr6" ];
+59 -> 62
+63 [ label="ArrayAssignStatement" ];
+17 -> 63
+64 [ label="IdLiteral\np" ];
+63 -> 64
+65 [ label="IntLiteral\n6" ];
+63 -> 65
+66 [ label="IdLiteral\nr7" ];
+63 -> 66
+67 [ label="ArrayAssignStatement" ];
+17 -> 67
+68 [ label="IdLiteral\np" ];
+67 -> 68
+69 [ label="IntLiteral\n7" ];
+67 -> 69
+70 [ label="IdLiteral\nr8" ];
+67 -> 70
+71 [ label="CallStatement" ];
+17 -> 71
+72 [ label="ThisLiteral\nthis" ];
+71 -> 72
+73 [ label="IdLiteral\np" ];
+71 -> 73
+74 [ label="MethodDecl" ];
+14 -> 74
+75 [ label="VoidType" ];
+74 -> 75
+76 [ label="Formal" ];
+74 -> 76
+77 [ label="IntArrayType" ];
+76 -> 77
+78 [ label="VarDecl" ];
+74 -> 78
+79 [ label="IntType" ];
+78 -> 79
+80 [ label="VarDecl" ];
+74 -> 80
+81 [ label="IntType" ];
+80 -> 81
+82 [ label="AssignStatement" ];
+74 -> 82
+83 [ label="IntLiteral\n0" ];
+82 -> 83
+84 [ label="WhileStatement" ];
+74 -> 84
+85 [ label="LtExp" ];
+84 -> 85
+86 [ label="IdLiteral\ni" ];
+85 -> 86
+87 [ label="IntLiteral\n8" ];
+85 -> 87
+88 [ label="BlockStatement" ];
+84 -> 88
+89 [ label="AssignStatement" ];
+88 -> 89
+90 [ label="IntLiteral\n0" ];
+89 -> 90
+91 [ label="WhileStatement" ];
+88 -> 91
+92 [ label="LtExp" ];
+91 -> 92
+93 [ label="IdLiteral\nj" ];
+92 -> 93
+94 [ label="ArrayExp" ];
+92 -> 94
+95 [ label="IdLiteral\na" ];
+94 -> 95
+96 [ label="IdLiteral\ni" ];
+94 -> 96
+97 [ label="BlockStatement" ];
+91 -> 97
+98 [ label="MeggySetPixel" ];
+97 -> 98
+99 [ label="ByteCast" ];
+98 -> 99
+100 [ label="IdLiteral\nj" ];
+99 -> 100
+101 [ label="ByteCast" ];
+98 -> 101
+102 [ label="IdLiteral\ni" ];
+101 -> 102
+103 [ label="ColorLiteral\nMeggy.Color.BLUE" ];
+98 -> 103
+104 [ label="AssignStatement" ];
+97 -> 104
+105 [ label="PlusExp" ];
+104 -> 105
+106 [ label="IdLiteral\nj" ];
+105 -> 106
+107 [ label="IntLiteral\n1" ];
+105 -> 107
+108 [ label="AssignStatement" ];
+88 -> 108
+109 [ label="PlusExp" ];
+108 -> 109
+110 [ label="IdLiteral\ni" ];
+109 -> 110
+111 [ label="IntLiteral\n1" ];
+109 -> 111
+}

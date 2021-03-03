@@ -1,0 +1,25 @@
+digraph SymTable {
+	graph [rankdir="LR"];
+	node [shape=record];
+	0 [label=" <f0> Scope | <f1> mDict\[Color\] "];
+	0:<f1> -> 1:<f0>;
+	1 [label=" <f0> ClassSTE | <f1> mName = Color| <f2> mMain = false| <f3> mSuperClass = null| <f4> mScope "];
+	1:<f4> -> 2:<f0>;
+	2 [label=" <f0> Scope | <f1> mDict\[dotcolor\] | <f2> mDict\[run\] | <f3> mDict\[setDots\] "];
+	2:<f1> -> 3:<f0>;
+	3 [label=" <f0> VarSTE | <f1> mName = dotcolor| <f2> mType = COLOR| <f3> mBase = Z| <f4> mOffset = 0"];
+	2:<f2> -> 4:<f0>;
+	4 [label=" <f0> MethodSTE | <f1> mName = run| <f2> mSignature = () returns class_null;| <f3> mScope "];
+	4:<f3> -> 5:<f0>;
+	5 [label=" <f0> Scope | <f1> mDict\[this\] "];
+	5:<f1> -> 6:<f0>;
+	6 [label=" <f0> VarSTE | <f1> mName = this| <f2> mType = class_Color;| <f3> mBase = Y| <f4> mOffset = 1"];
+	2:<f3> -> 7:<f0>;
+	7 [label=" <f0> MethodSTE | <f1> mName = setDots| <f2> mSignature = (COLOR) returns class_null;| <f3> mScope "];
+	7:<f3> -> 8:<f0>;
+	8 [label=" <f0> Scope | <f1> mDict\[this\] | <f2> mDict\[color\] "];
+	8:<f1> -> 9:<f0>;
+	9 [label=" <f0> VarSTE | <f1> mName = this| <f2> mType = class_Color;| <f3> mBase = Y| <f4> mOffset = 1"];
+	8:<f2> -> 10:<f0>;
+	10 [label=" <f0> VarSTE | <f1> mName = color| <f2> mType = COLOR| <f3> mBase = Y| <f4> mOffset = 3"];
+}

@@ -1,0 +1,259 @@
+digraph ASTGraph {
+0 [ label="Program" ];
+1 [ label="MainClass" ];
+0 -> 1
+2 [ label="BlockStatement" ];
+1 -> 2
+3 [ label="CallStatement" ];
+2 -> 3
+4 [ label="NewExp" ];
+3 -> 4
+5 [ label="TopClassDecl" ];
+0 -> 5
+6 [ label="VarDecl" ];
+5 -> 6
+7 [ label="ByteType" ];
+6 -> 7
+8 [ label="VarDecl" ];
+5 -> 8
+9 [ label="ByteType" ];
+8 -> 9
+10 [ label="MethodDecl" ];
+5 -> 10
+11 [ label="VoidType" ];
+10 -> 11
+12 [ label="VarDecl" ];
+10 -> 12
+13 [ label="ToneType" ];
+12 -> 13
+14 [ label="AssignStatement" ];
+10 -> 14
+15 [ label="ToneLiteral\nMeggy.Tone.D3" ];
+14 -> 15
+16 [ label="AssignStatement" ];
+10 -> 16
+17 [ label="ByteCast" ];
+16 -> 17
+18 [ label="IntLiteral\n4" ];
+17 -> 18
+19 [ label="AssignStatement" ];
+10 -> 19
+20 [ label="ByteCast" ];
+19 -> 20
+21 [ label="IntLiteral\n4" ];
+20 -> 21
+22 [ label="WhileStatement" ];
+10 -> 22
+23 [ label="TrueLiteral\ntrue" ];
+22 -> 23
+24 [ label="BlockStatement" ];
+22 -> 24
+25 [ label="IfStatement" ];
+24 -> 25
+26 [ label="AndExp" ];
+25 -> 26
+27 [ label="MeggyCheckButton" ];
+26 -> 27
+28 [ label="ButtonLiteral\nMeggy.Button.Up" ];
+27 -> 28
+29 [ label="LtExp" ];
+26 -> 29
+30 [ label="IdLiteral\ncur_y" ];
+29 -> 30
+31 [ label="ByteCast" ];
+29 -> 31
+32 [ label="IntLiteral\n7" ];
+31 -> 32
+33 [ label="BlockStatement" ];
+25 -> 33
+34 [ label="CallStatement" ];
+33 -> 34
+35 [ label="ThisLiteral\nthis" ];
+34 -> 35
+36 [ label="IdLiteral\ncur_x" ];
+34 -> 36
+37 [ label="ByteCast" ];
+34 -> 37
+38 [ label="PlusExp" ];
+37 -> 38
+39 [ label="IdLiteral\ncur_y" ];
+38 -> 39
+40 [ label="ByteCast" ];
+38 -> 40
+41 [ label="IntLiteral\n1" ];
+40 -> 41
+42 [ label="MeggyToneStart" ];
+33 -> 42
+43 [ label="IdLiteral\nlocalvar" ];
+42 -> 43
+44 [ label="IntLiteral\n50" ];
+42 -> 44
+45 [ label="BlockStatement" ];
+25 -> 45
+46 [ label="IfStatement" ];
+24 -> 46
+47 [ label="AndExp" ];
+46 -> 47
+48 [ label="MeggyCheckButton" ];
+47 -> 48
+49 [ label="ButtonLiteral\nMeggy.Button.Down" ];
+48 -> 49
+50 [ label="LtExp" ];
+47 -> 50
+51 [ label="ByteCast" ];
+50 -> 51
+52 [ label="IntLiteral\n0" ];
+51 -> 52
+53 [ label="IdLiteral\ncur_y" ];
+50 -> 53
+54 [ label="BlockStatement" ];
+46 -> 54
+55 [ label="CallStatement" ];
+54 -> 55
+56 [ label="ThisLiteral\nthis" ];
+55 -> 56
+57 [ label="IdLiteral\ncur_x" ];
+55 -> 57
+58 [ label="ByteCast" ];
+55 -> 58
+59 [ label="MinusExp" ];
+58 -> 59
+60 [ label="IdLiteral\ncur_y" ];
+59 -> 60
+61 [ label="ByteCast" ];
+59 -> 61
+62 [ label="IntLiteral\n1" ];
+61 -> 62
+63 [ label="MeggyToneStart" ];
+54 -> 63
+64 [ label="IdLiteral\nlocalvar" ];
+63 -> 64
+65 [ label="IntLiteral\n50" ];
+63 -> 65
+66 [ label="BlockStatement" ];
+46 -> 66
+67 [ label="IfStatement" ];
+24 -> 67
+68 [ label="AndExp" ];
+67 -> 68
+69 [ label="MeggyCheckButton" ];
+68 -> 69
+70 [ label="ButtonLiteral\nMeggy.Button.Left" ];
+69 -> 70
+71 [ label="LtExp" ];
+68 -> 71
+72 [ label="ByteCast" ];
+71 -> 72
+73 [ label="IntLiteral\n0" ];
+72 -> 73
+74 [ label="IdLiteral\ncur_x" ];
+71 -> 74
+75 [ label="BlockStatement" ];
+67 -> 75
+76 [ label="CallStatement" ];
+75 -> 76
+77 [ label="ThisLiteral\nthis" ];
+76 -> 77
+78 [ label="ByteCast" ];
+76 -> 78
+79 [ label="MinusExp" ];
+78 -> 79
+80 [ label="IdLiteral\ncur_x" ];
+79 -> 80
+81 [ label="ByteCast" ];
+79 -> 81
+82 [ label="IntLiteral\n1" ];
+81 -> 82
+83 [ label="IdLiteral\ncur_y" ];
+76 -> 83
+84 [ label="MeggyToneStart" ];
+75 -> 84
+85 [ label="IdLiteral\nlocalvar" ];
+84 -> 85
+86 [ label="IntLiteral\n50" ];
+84 -> 86
+87 [ label="BlockStatement" ];
+67 -> 87
+88 [ label="IfStatement" ];
+24 -> 88
+89 [ label="AndExp" ];
+88 -> 89
+90 [ label="MeggyCheckButton" ];
+89 -> 90
+91 [ label="ButtonLiteral\nMeggy.Button.Right" ];
+90 -> 91
+92 [ label="LtExp" ];
+89 -> 92
+93 [ label="IdLiteral\ncur_x" ];
+92 -> 93
+94 [ label="ByteCast" ];
+92 -> 94
+95 [ label="IntLiteral\n7" ];
+94 -> 95
+96 [ label="BlockStatement" ];
+88 -> 96
+97 [ label="CallStatement" ];
+96 -> 97
+98 [ label="ThisLiteral\nthis" ];
+97 -> 98
+99 [ label="ByteCast" ];
+97 -> 99
+100 [ label="PlusExp" ];
+99 -> 100
+101 [ label="IdLiteral\ncur_x" ];
+100 -> 101
+102 [ label="ByteCast" ];
+100 -> 102
+103 [ label="IntLiteral\n1" ];
+102 -> 103
+104 [ label="IdLiteral\ncur_y" ];
+97 -> 104
+105 [ label="MeggyToneStart" ];
+96 -> 105
+106 [ label="IdLiteral\nlocalvar" ];
+105 -> 106
+107 [ label="IntLiteral\n50" ];
+105 -> 107
+108 [ label="BlockStatement" ];
+88 -> 108
+109 [ label="MeggyDelay" ];
+24 -> 109
+110 [ label="IntLiteral\n100" ];
+109 -> 110
+111 [ label="MethodDecl" ];
+5 -> 111
+112 [ label="VoidType" ];
+111 -> 112
+113 [ label="Formal" ];
+111 -> 113
+114 [ label="ByteType" ];
+113 -> 114
+115 [ label="Formal" ];
+111 -> 115
+116 [ label="ByteType" ];
+115 -> 116
+117 [ label="MeggySetPixel" ];
+111 -> 117
+118 [ label="IdLiteral\ncur_x" ];
+117 -> 118
+119 [ label="IdLiteral\ncur_y" ];
+117 -> 119
+120 [ label="ColorLiteral\nMeggy.Color.DARK" ];
+117 -> 120
+121 [ label="MeggySetPixel" ];
+111 -> 121
+122 [ label="IdLiteral\nx" ];
+121 -> 122
+123 [ label="IdLiteral\ny" ];
+121 -> 123
+124 [ label="ColorLiteral\nMeggy.Color.BLUE" ];
+121 -> 124
+125 [ label="AssignStatement" ];
+111 -> 125
+126 [ label="IdLiteral\nx" ];
+125 -> 126
+127 [ label="AssignStatement" ];
+111 -> 127
+128 [ label="IdLiteral\ny" ];
+127 -> 128
+}

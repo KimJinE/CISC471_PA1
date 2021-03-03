@@ -1,0 +1,37 @@
+digraph SymTable {
+	graph [rankdir="LR"];
+	node [shape=record];
+	0 [label=" <f0> Scope | <f1> mDict\[Board\] "];
+	0:<f1> -> 1:<f0>;
+	1 [label=" <f0> ClassSTE | <f1> mName = Board| <f2> mMain = false| <f3> mSuperClass = null| <f4> mScope "];
+	1:<f4> -> 2:<f0>;
+	2 [label=" <f0> Scope | <f1> mDict\[p\] | <f2> mDict\[run\] | <f3> mDict\[displayboard\] "];
+	2:<f1> -> 3:<f0>;
+	3 [label=" <f0> VarSTE | <f1> mName = p| <f2> mType = [COLOR]| <f3> mBase = Z| <f4> mOffset = 0"];
+	2:<f2> -> 4:<f0>;
+	4 [label=" <f0> MethodSTE | <f1> mName = run| <f2> mSignature = (COLOR, COLOR, COLOR, COLOR) returns class_null;| <f3> mScope "];
+	4:<f3> -> 5:<f0>;
+	5 [label=" <f0> Scope | <f1> mDict\[this\] | <f2> mDict\[c1\] | <f3> mDict\[c2\] | <f4> mDict\[c3\] | <f5> mDict\[c4\] "];
+	5:<f1> -> 6:<f0>;
+	6 [label=" <f0> VarSTE | <f1> mName = this| <f2> mType = class_Board;| <f3> mBase = Y| <f4> mOffset = 1"];
+	5:<f2> -> 7:<f0>;
+	7 [label=" <f0> VarSTE | <f1> mName = c1| <f2> mType = COLOR| <f3> mBase = Y| <f4> mOffset = 3"];
+	5:<f3> -> 8:<f0>;
+	8 [label=" <f0> VarSTE | <f1> mName = c2| <f2> mType = COLOR| <f3> mBase = Y| <f4> mOffset = 4"];
+	5:<f4> -> 9:<f0>;
+	9 [label=" <f0> VarSTE | <f1> mName = c3| <f2> mType = COLOR| <f3> mBase = Y| <f4> mOffset = 5"];
+	5:<f5> -> 10:<f0>;
+	10 [label=" <f0> VarSTE | <f1> mName = c4| <f2> mType = COLOR| <f3> mBase = Y| <f4> mOffset = 6"];
+	2:<f3> -> 11:<f0>;
+	11 [label=" <f0> MethodSTE | <f1> mName = displayboard| <f2> mSignature = ([COLOR]) returns class_null;| <f3> mScope "];
+	11:<f3> -> 12:<f0>;
+	12 [label=" <f0> Scope | <f1> mDict\[this\] | <f2> mDict\[a\] | <f3> mDict\[j\] | <f4> mDict\[i\] "];
+	12:<f1> -> 13:<f0>;
+	13 [label=" <f0> VarSTE | <f1> mName = this| <f2> mType = class_Board;| <f3> mBase = Y| <f4> mOffset = 1"];
+	12:<f2> -> 14:<f0>;
+	14 [label=" <f0> VarSTE | <f1> mName = a| <f2> mType = [COLOR]| <f3> mBase = Y| <f4> mOffset = 3"];
+	12:<f3> -> 15:<f0>;
+	15 [label=" <f0> VarSTE | <f1> mName = j| <f2> mType = INT| <f3> mBase = Y| <f4> mOffset = 5"];
+	12:<f4> -> 16:<f0>;
+	16 [label=" <f0> VarSTE | <f1> mName = i| <f2> mType = INT| <f3> mBase = Y| <f4> mOffset = 7"];
+}

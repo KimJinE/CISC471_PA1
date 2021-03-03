@@ -1,0 +1,107 @@
+digraph ASTGraph {
+0 [ label="Program" ];
+1 [ label="MainClass" ];
+0 -> 1
+2 [ label="BlockStatement" ];
+1 -> 2
+3 [ label="BlockStatement" ];
+2 -> 3
+4 [ label="CallStatement" ];
+3 -> 4
+5 [ label="NewExp" ];
+4 -> 5
+6 [ label="ByteCast" ];
+4 -> 6
+7 [ label="IntLiteral\n3" ];
+6 -> 7
+8 [ label="ByteCast" ];
+4 -> 8
+9 [ label="IntLiteral\n4" ];
+8 -> 9
+10 [ label="CallStatement" ];
+3 -> 10
+11 [ label="NewExp" ];
+10 -> 11
+12 [ label="ByteCast" ];
+10 -> 12
+13 [ label="IntLiteral\n4" ];
+12 -> 13
+14 [ label="ByteCast" ];
+10 -> 14
+15 [ label="IntLiteral\n4" ];
+14 -> 15
+16 [ label="CallStatement" ];
+3 -> 16
+17 [ label="NewExp" ];
+16 -> 17
+18 [ label="ByteCast" ];
+16 -> 18
+19 [ label="IntLiteral\n5" ];
+18 -> 19
+20 [ label="ByteCast" ];
+16 -> 20
+21 [ label="IntLiteral\n4" ];
+20 -> 21
+22 [ label="TopClassDecl" ];
+0 -> 22
+23 [ label="MethodDecl" ];
+22 -> 23
+24 [ label="VoidType" ];
+23 -> 24
+25 [ label="Formal" ];
+23 -> 25
+26 [ label="ByteType" ];
+25 -> 26
+27 [ label="Formal" ];
+23 -> 27
+28 [ label="ByteType" ];
+27 -> 28
+29 [ label="MeggySetPixel" ];
+23 -> 29
+30 [ label="IdLiteral\nx" ];
+29 -> 30
+31 [ label="IdLiteral\ny" ];
+29 -> 31
+32 [ label="ColorLiteral\nMeggy.Color.RED" ];
+29 -> 32
+33 [ label="MethodDecl" ];
+22 -> 33
+34 [ label="VoidType" ];
+33 -> 34
+35 [ label="Formal" ];
+33 -> 35
+36 [ label="ByteType" ];
+35 -> 36
+37 [ label="Formal" ];
+33 -> 37
+38 [ label="ByteType" ];
+37 -> 38
+39 [ label="MeggySetPixel" ];
+33 -> 39
+40 [ label="IdLiteral\nx" ];
+39 -> 40
+41 [ label="IdLiteral\ny" ];
+39 -> 41
+42 [ label="ColorLiteral\nMeggy.Color.GREEN" ];
+39 -> 42
+43 [ label="MethodDecl" ];
+22 -> 43
+44 [ label="VoidType" ];
+43 -> 44
+45 [ label="Formal" ];
+43 -> 45
+46 [ label="ByteType" ];
+45 -> 46
+47 [ label="Formal" ];
+43 -> 47
+48 [ label="ByteType" ];
+47 -> 48
+49 [ label="MeggySetPixel" ];
+43 -> 49
+50 [ label="IdLiteral\nx" ];
+49 -> 50
+51 [ label="IdLiteral\ny" ];
+49 -> 51
+52 [ label="ColorLiteral\nMeggy.Color.YELLOW" ];
+49 -> 52
+}
